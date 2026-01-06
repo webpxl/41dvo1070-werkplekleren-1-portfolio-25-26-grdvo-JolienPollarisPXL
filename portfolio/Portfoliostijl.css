@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SST', sans-serif;
+    background-color: #FFEEF2;
+}
+header{
+    background-color: #97264C;
+    height: 7vh;
+
+}
+
+.nav-page-header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    height: 7vh;
+    margin: 0;
+    z-index: 1000;
+    }
+
+.nav-page-header a{
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("/portfolio/assets/achtergrond voor website.png");
+    background-size: cover;
+    background-position: center;
+    height: 77vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.banner p{
+    font-weight: normal;
+    color: #FFEEF2;
+}
+
