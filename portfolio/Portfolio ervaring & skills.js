@@ -12,7 +12,7 @@ const work = [
         date: "17/02/2025 - 23/05/2025",
     },
     {
-        function: "Dienst communicatie(stage)",
+        function: "Dienst communicatie (stage)",
         imgPath:  "Kortenaken.jpeg",
         location: "Gemeentehuis Kortenaken",
         date: "06/08/2024 - 24/05/2024",
