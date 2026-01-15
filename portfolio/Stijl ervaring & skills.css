@@ -18,13 +18,20 @@ header {
     width: 100%;
     z-index: 1000;
 }
-.nav-page-header a.active {
+
+.nav-page-header a{
     text-decoration: none;
-    color: #f8d4dd;
+    color: white;
 }
 
 .nav-page-header a:hover {
     text-decoration: none;
+    font-weight: bold;
+    color: #f8d4dd;
+}
+
+.nav-page-header a.active {
+    text-decoration: underline;
     font-weight: bold;
     color: #f8d4dd;
 }
@@ -42,12 +49,8 @@ header {
     padding-right: 20px;
 }
 
-.nav-page-header a{
-    text-decoration: none;
-    color: white;
-}
 
-h2{
+h1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,15 +68,18 @@ h2{
     padding: 0 20px;
 }
 
-.opleidingen h3 {
+.opleidingen h2 {
     text-align: left;
     margin: 40px 0 30px 190px;
     font-weight: bold;
-    color: #3a2c28;
+    color: #5b0213;
+    display: inline-block;
+    border-bottom: 4px solid #e58ca3;
+    padding-bottom: 8px;
 }
 
 
-.opleidingen h3,
+.opleidingen h2,
 .opleidingen p {
     text-align: left;
     margin: 20px 0;
@@ -101,11 +107,11 @@ h2{
     padding: 10px;
     font-size: 16px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
 }
 
 .opleiding:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transition: transform 0.3s;
 }
 
 .work{
@@ -151,6 +157,7 @@ h2{
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 .experience-card p{
@@ -159,15 +166,13 @@ h2{
     margin-bottom: 2px;
 }
 
-.experience-card:hover {
-    transform: scale(1.1);
-}
 
 
 .card-footer {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    margin-left: 5px;
 }
 
 

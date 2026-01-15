@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         experienceCard.appendChild(functionWork);
 
         const imgWork = document.createElement("img");
-        imgWork.src = "portfolio/assets/" + workExperience.imgPath;
+        imgWork.src = "/portfolio/assets/" + workExperience.imgPath;
         imgWork.alt = workExperience.location;
         experienceCard.appendChild(imgWork);
 

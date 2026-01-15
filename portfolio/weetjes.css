@@ -18,13 +18,18 @@ header {
     width: 100%;
     z-index: 1000;
 }
-.nav-page-header a.active {
+.nav-page-header a{
     text-decoration: none;
-    color: #f8d4dd;
+    color: white;
 }
 
 .nav-page-header a:hover {
     text-decoration: none;
+    font-weight: bold;
+    color: #f8d4dd;
+}
+.nav-page-header a.active {
+    text-decoration: underline;
     font-weight: bold;
     color: #f8d4dd;
 }
@@ -42,10 +47,6 @@ header {
     padding-right: 20px;
 }
 
-.nav-page-header a{
-    text-decoration: none;
-    color: white;
-}
 h2{
     display: flex;
     justify-content: center;
