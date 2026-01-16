@@ -62,7 +62,7 @@ h1{
 
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("/portfolio/assets/achtergrond voor website.png");
+    url("assets/achtergrond voor website.png");
     background-size: cover;
     background-position: center;
     height: 77vh;

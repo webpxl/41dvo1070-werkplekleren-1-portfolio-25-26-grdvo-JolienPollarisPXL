@@ -1,4 +1,4 @@
-const basePath = "/portfolio/assets/Fotografie/";
+const basePath = "assets/Fotografie/";
 const images = [
     "beeldtaal.png",
     "Bloem.jpeg",
