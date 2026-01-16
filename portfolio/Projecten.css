@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'SST', sans-serif;
+    font-family: 'Georgia', serif;
     background-color: #FFEEF2;
     padding-top: 7vh;
 }
@@ -207,6 +207,48 @@ p {
     display: block;
     border-radius: 10px;
     object-fit: cover;
+}
+.contact-sectie {
+    background-color: #97264C;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.contact-item:hover {
+    opacity: 0.8;
+}
+.contact-item img {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.contact-sectie h1{
+        font-weight: bold;
+        color: white;
+        padding-left: 20px;
+        line-height: 7vh;
+        text-align: center;
+        text-transform: lowercase;
+        margin: 20px;
 }
 
 

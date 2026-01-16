@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'SST', sans-serif;
+    font-family: 'Georgia', serif;
     background-color: #FFEEF2;
     padding-top: 7vh;
 }
@@ -17,11 +17,6 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-}
-
-.nav-page-header a{
-    text-decoration: none;
-    color: white;
 }
 
 .nav-page-header a:hover {
@@ -49,6 +44,16 @@ header {
     padding-right: 20px;
 }
 
+.nav-page-header a{
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
 
 h1{
     display: flex;
@@ -62,20 +67,20 @@ h1{
     letter-spacing: 1px;
 }
 
+h2 {
+    font-weight: bold;
+    color: #5b0213;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    border-bottom: 4px solid #e58ca3;
+    padding-bottom: 8px;
+}
+
 .opleidingen {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.opleidingen h2 {
-    text-align: left;
-    margin: 40px 0 30px 190px;
-    font-weight: bold;
-    color: #5b0213;
-    display: inline-block;
-    border-bottom: 4px solid #e58ca3;
-    padding-bottom: 8px;
 }
 
 
@@ -167,13 +172,93 @@ h1{
 }
 
 
-
 .card-footer {
     display: flex;
     flex-direction: column;
     gap: 2px;
     margin-left: 5px;
 }
+
+
+.skills-grid {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.skill-kolom {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 20px;
+}
+
+
+
+.tag-groep {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.tag.soft {
+    background-color: white;
+    color: #97264C;
+}
+
+.tag.hard {
+    background-color: #97264C;
+    color: white;
+}
+.contact-sectie {
+    background-color: #97264C;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.contact-item:hover {
+    opacity: 0.8;
+}
+.contact-item img {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+.contact-sectie h1{
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+    line-height: 7vh;
+    text-align: center;
+    text-transform: lowercase;
+    margin: 20px;
+}
+
+
 
 
 
