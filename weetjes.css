@@ -3,37 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Georgia', serif;
     background-color: #FFEEF2;
     padding-top: 7vh;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 header {
     background-color: #97264C;
-    height: 7vh;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    height: 7vh;
 }
 
-.nav-page-header a{
-    text-decoration: none;
-    color: white;
-}
-
-.nav-page-header a:hover {
-    text-decoration: none;
-    font-weight: bold;
-    color: #f8d4dd;
-}
+.nav-page-header a:hover,
 .nav-page-header a.active {
-    text-decoration: underline;
     font-weight: bold;
     color: #f8d4dd;
+    text-decoration: underline;
 }
+
 
 .nav-page-header ul {
     list-style: none;
@@ -47,8 +44,16 @@ header {
     margin: 0;
     padding-right: 20px;
 }
+
+.nav-page-header a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
 }
@@ -225,7 +230,7 @@ h3{
 /* Allow nav to wrap and reduce spacing for narrower layouts */
 .nav-page-header ul {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     gap: 1rem;
     padding-right: 12px;
 }
@@ -273,23 +278,26 @@ h3{
 /* Tablet and large phones: stack content and shrink header */
 @media (max-width: 768px) {
     header {
-        height: 56px;
+        position: relative; /* Voorkomt dat de header over je H1 titel plakt */
+        height: auto;
+        padding: 10px 0;
     }
 
     body {
-        padding-top: 56px;
+        padding-top: 0; /* Geen padding nodig als header niet meer 'fixed' is */
+    }
+
+    .nav-page-header ul {
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+        padding: 10px 0;
+        justify-content: center;
     }
 
     h1 {
         font-size: 26px;
         margin: 1.6rem 0.6rem;
-    }
-
-    .nav-page-header ul {
-        flex-direction: column;
-        gap: 0.6rem;
-        padding-right: 8px;
-        align-items: center;
     }
 
     /* Stack card content vertically */

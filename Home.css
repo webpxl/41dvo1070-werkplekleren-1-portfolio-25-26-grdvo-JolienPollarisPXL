@@ -15,42 +15,22 @@ img {
     height: auto;
 }
 
-
 header {
     background-color: #97264C;
-    height: 7vh;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    height: 7vh;
 }
 
-
-
-h1{
-    font-weight: bold;
-    color: white;
-    padding-left: 20px;
-    line-height: 7vh;
-    text-align: center;
-
-}
-
-.nav-page-header a{
-    text-decoration: none;
-    color: white;
-}
-
-.nav-page-header a:hover {
-    text-decoration: none;
-    font-weight: bold;
-    color: #f8d4dd;
-}
+.nav-page-header a:hover,
 .nav-page-header a.active {
-    text-decoration: underline;
     font-weight: bold;
     color: #f8d4dd;
+    text-decoration: underline;
 }
+
 
 .nav-page-header ul {
     list-style: none;
@@ -63,10 +43,15 @@ h1{
     height: 7vh;
     margin: 0;
     padding-right: 20px;
-    }
+}
+
+.nav-page-header a{
+    text-decoration: none;
+    color: white;
+}
 
 .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
     url("assets/achtergrond voor website.png");
     background-size: cover;
     background-position: center;
@@ -74,12 +59,12 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     color: white;
     font-weight: bold;
-    flex-direction: column;
 }
 
-.banner p{
+.banner p {
     font-weight: normal;
     color: #FFEEF2;
 }
@@ -90,7 +75,14 @@ main {
     text-align: center;
 }
 
-h2{
+h1 {
+     font-weight: bold;
+     color: white;
+     text-align: center;
+     line-height: 7vh;
+ }
+
+h2 {
     font-weight: bold;
     color: #5b0213;
     text-align: left;
@@ -104,20 +96,19 @@ h2{
     margin: 60px 20px;
 }
 
-
-
 .intro-photo img {
     width: 230px;
-    height: 230px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
+    height: auto;
 }
+
 
 .intro-text {
     max-width: 600px;
     text-align: left;
 }
-
 
 .kernwaarden {
     display: flex;
@@ -140,9 +131,6 @@ h2{
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
 
 .flip-card-front,
 .flip-card-back {
@@ -151,7 +139,6 @@ h2{
     height: 100%;
     border-radius: 50%;
     backface-visibility: hidden;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,9 +146,8 @@ h2{
     padding: 20px;
 }
 
-
 .flip-card-front {
-    background-color: #97264C;  /* zacht, warm */
+    background-color: #97264C;
     color: white;
 }
 
@@ -170,6 +156,10 @@ h2{
     color: #97264C;
     transform: rotateY(180deg);
 }
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
 
 .flip-card h3 {
     font-size: 1.1rem;
@@ -178,12 +168,6 @@ h2{
 .flip-card p {
     font-size: 0.9rem;
     line-height: 1.4;
-}
-
-footer{
-    background-color: #97264C;
-    color: white;
-
 }
 
 .hobby-container {
@@ -198,6 +182,7 @@ footer{
     background-color: white;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -212,7 +197,7 @@ footer{
     transform: scale(1.05);
 }
 
-.hobby-card img{
+.hobby-card img {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
@@ -251,19 +236,45 @@ footer{
     height: 18px;
     flex-shrink: 0;
 }
+.contact-sectie h1{
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+    line-height: 7vh;
+    text-align: center;
+    text-transform: lowercase;
+    margin: 20px;
+}
 
-.ervaring-card img,
-#sliderImage {
-    display: block;
-    width: 100%;
-    height: auto;
+.banner img,
+.intro-photo img,
+.hobby-card img,
+.flip-card img {
     max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    height: 7vh;
+    box-sizing: border-box;
+}
+
+.nav-page-header ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    padding-right: 20px;
 }
 
 @media (max-width: 1024px) {
     main {
         margin: 100px 20px;
-        max-width: 820px;
+        max-width: 860px;
     }
 
     .banner {
@@ -280,32 +291,60 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
+
+    .flip-card,
+    .flip-card-front,
+    .flip-card-back {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 @media (max-width: 768px) {
     header {
-        position: fixed;
-        top: 0;
-        width: 100%;
+        position: relative;
         height: auto;
-        padding: 8px 12px;
+        padding: 10px 0;
+    }
+
+    body {
+        padding-top: 0;
+    }
+
+    .nav-page-header ul {
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+
+    main {
+        margin: 90px 12px;
     }
 
     h1 {
         font-size: 1rem;
-        padding-left: 0;
-        line-height: 1.2;
+        color: white;
+        margin: 1.6rem 0;
+        line-height: normal;
         text-align: center;
+    }
+
+    .nav-page-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 8px 12px;
+        height: auto;
     }
 
     .nav-page-header ul {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         gap: 0.6rem;
         padding-right: 0;
-        height: auto;
-        margin-top: 8px;
     }
 
     .banner {
@@ -318,23 +357,24 @@ footer{
         gap: 18px;
         margin: 30px 16px;
         align-items: center;
+        text-align: center;
     }
 
     .intro-photo img {
         width: 160px;
         height: 160px;
+        border-radius: 50%;
     }
 
     .intro-text {
         max-width: 100%;
-        text-align: center;
     }
 
     .kernwaarden {
-        display: flex;
         flex-direction: column;
         gap: 16px;
         margin: 40px 12px;
+        align-items: center;
     }
 
     .flip-card,
@@ -355,32 +395,42 @@ footer{
         padding: 14px;
     }
 
-    .ervaring-card {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        text-align: center;
-        padding: 12px;
-    }
-
-    .ervaring-card img {
-        max-width: 320px;
-        border-radius: 8px;
-    }
-
     .contact-sectie {
         padding: 36px 12px;
+    }
+
+    .banner p {
+        font-size: 0.95rem;
     }
 }
 
 @media (max-width: 480px) {
-    .banner {
-        height: 40vh;
+    header {
+        position: relative;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    body {
+        padding-top: 0;
+    }
+
+    .nav-page-header ul {
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    main {
+        margin: 70px 10px;
+        padding: 0 12px;
     }
 
     h1 {
         font-size: 0.95rem;
+        margin: 1rem 0;
     }
 
     .nav-page-header ul {
@@ -406,11 +456,6 @@ footer{
         padding: 0 12px;
     }
 
-    main {
-        margin: 90px 12px;
-        max-width: 100%;
-    }
-
     h2 {
         font-size: 1rem;
     }
@@ -418,16 +463,10 @@ footer{
     .intro-text {
         font-size: 0.95rem;
     }
+
+    .contact-sectie {
+        padding: 28px 12px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
 
 

@@ -3,37 +3,34 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Georgia', serif;
     background-color: #FFEEF2;
     padding-top: 7vh;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 header {
     background-color: #97264C;
-    height: 7vh;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    height: 7vh;
 }
 
-.nav-page-header a{
-    text-decoration: none;
-    color: white;
-}
-
-.nav-page-header a:hover {
-    text-decoration: none;
-    font-weight: bold;
-    color: #f8d4dd;
-}
+.nav-page-header a:hover,
 .nav-page-header a.active {
-    text-decoration: underline;
     font-weight: bold;
     color: #f8d4dd;
+    text-decoration: underline;
 }
+
 
 .nav-page-header ul {
     list-style: none;
@@ -46,6 +43,17 @@ header {
     height: 7vh;
     margin: 0;
     padding-right: 20px;
+}
+
+.nav-page-header a{
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
 }
 
 h1{
@@ -250,10 +258,7 @@ p {
         text-transform: lowercase;
         margin: 20px;
 }
-/* css */
-/* Append to `Projecten.css` */
 
-/* Make images and slider fluid */
 .slider img,
 .uitnodiging-image img,
 .Rosenheim img,
@@ -264,15 +269,13 @@ p {
     display: block;
 }
 
-/* Allow nav to wrap and reduce spacing on narrower layouts */
 .nav-page-header ul {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     gap: 1rem;
     padding-right: 12px;
 }
 
-/* Reduce large margins and scale headings for smaller viewports */
 @media (max-width: 1024px) {
     main {
         max-width: 860px;
@@ -302,23 +305,26 @@ p {
 
 @media (max-width: 768px) {
     header {
-        height: 56px;
+        position: relative;
+        height: auto;
+        padding: 10px 0;
     }
 
     body {
-        padding-top: 56px;
+        padding-top: 0;
+    }
+
+    .nav-page-header ul {
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+        padding: 10px 0;
+        justify-content: center;
     }
 
     h1 {
         font-size: 26px;
         margin: 1.6rem 0.5rem;
-    }
-
-    .nav-page-header ul {
-        flex-direction: column;
-        gap: 0.6rem;
-        padding-right: 8px;
-        align-items: center;
     }
 
     .Rosenheim,

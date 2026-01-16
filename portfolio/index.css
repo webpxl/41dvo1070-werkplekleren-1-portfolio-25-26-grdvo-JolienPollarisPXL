@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #FFEEF2;
+    padding-top: 7vh;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #97264C;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+h2 {
+    font-weight: bold;
+    color: #5b0213;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    border-bottom: 4px solid #e58ca3;
+    padding-bottom: 8px;
+}
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.kernkwadranten-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 20px;
+}
+
+.kernkwadrant-card {
+    background-color: #fff0f6;
+    border: 2px solid #97264C;
+    border-radius: 16px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kernkwadrant-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+.kernkwadrant-card h3 {
+    color: #97264C;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.kernkwadrant-card p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.kernkwadrant-card strong {
+    color: #5b0213;
+}
+
+@media (max-width: 768px) {
+    .kernkwadranten-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .kernkwadrant-card {
+        width: 90%;
+    }
+}
+.wpl-tabel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 40px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpl-tabel {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #97264C;
+    border-radius: 12px;
+    background-color: #fff0f6;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.wpl-tabel:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.25);
+}
+
+.wpl-tabel th {
+    background-color: #97264C;
+    color: #fff0f6;
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.wpl-tabel td {
+    padding: 15px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    color: #5b0213;
+}
+
+@media (max-width: 768px) {
+    .wpl-tabel {
+        width: 95%;
+    }
+}
+
+
+
