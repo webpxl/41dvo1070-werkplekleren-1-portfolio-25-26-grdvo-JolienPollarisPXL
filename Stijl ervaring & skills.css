@@ -258,6 +258,160 @@ h2 {
     margin: 20px;
 }
 
+/* css */
+/* Responsive additions — append to `Stijl ervaring & skills.css` */
+
+/* Make images and card widths fluid */
+.work img,
+.experience-card img,
+.opleiding,
+.uitnodiging-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Ensure cards shrink on small screens but keep their rounded look */
+.experience-card {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Allow nav to wrap on narrower layouts */
+.nav-page-header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 12px;
+}
+
+/* Large screens (tablets / small laptops) */
+@media (max-width: 1024px) {
+    main {
+        max-width: 860px;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 34px;
+        margin: 2rem 1rem;
+    }
+
+    .work {
+        gap: 28px;
+    }
+
+    .opleiding {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Tablet and large phones: stack sections and reduce header */
+@media (max-width: 768px) {
+    header {
+        height: 56px;
+    }
+
+    body {
+        padding-top: 56px;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin: 1.6rem 0.6rem;
+    }
+
+    .nav-page-header ul {
+        flex-direction: column;
+        gap: 0.6rem;
+        padding-right: 8px;
+        align-items: center;
+    }
+
+    .opleiding-container {
+        gap: 18px;
+    }
+
+    .opleiding {
+        width: 120px;
+        height: 120px;
+        font-size: 15px;
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .experience-card {
+        height: auto;
+        padding: 12px;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .skill-kolom {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .contact-sectie {
+        padding: 40px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 1rem 0.6rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .opleiding {
+        width: 110px;
+        height: 110px;
+        font-size: 14px;
+    }
+
+    .experience-card {
+        border-radius: 18px;
+        padding: 10px;
+    }
+
+    .experience-card img {
+        height: 160px;
+        border-radius: 14px;
+    }
+
+    .work img {
+        height: 160px;
+        border-radius: 14px;
+    }
+
+    .contact-sectie {
+        padding: 28px 12px;
+    }
+}
+
 
 
 

@@ -207,4 +207,179 @@ h3{
     margin: 20px;
 }
 
+/* css */
+/* Responsive additions — append to `weetjes.css` */
+
+/* Make images fluid and cards adapt */
+.image-zon img,
+.personality-image img,
+.Snoezy-card img,
+.Snowy-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Allow nav to wrap and reduce spacing for narrower layouts */
+.nav-page-header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 12px;
+}
+
+/* Ensure cards don't exceed container on small viewports */
+.card-zon,
+.personality-card {
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+/* Large screens / small laptops */
+@media (max-width: 1024px) {
+    main {
+        max-width: 860px;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 34px;
+        margin: 2.2rem 1rem;
+    }
+
+    .card-zon,
+    .personality-card {
+        gap: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    .image-zon img {
+        width: 140px;
+    }
+
+    .personality-image img {
+        width: 180px;
+    }
+
+    .cat-cards {
+        gap: 1.25rem;
+        margin: 16px;
+    }
+}
+
+/* Tablet and large phones: stack content and shrink header */
+@media (max-width: 768px) {
+    header {
+        height: 56px;
+    }
+
+    body {
+        padding-top: 56px;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin: 1.6rem 0.6rem;
+    }
+
+    .nav-page-header ul {
+        flex-direction: column;
+        gap: 0.6rem;
+        padding-right: 8px;
+        align-items: center;
+    }
+
+    /* Stack card content vertically */
+    .card-zon,
+    .personality-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .image-zon img {
+        width: 120px;
+        border-radius: 12px;
+    }
+
+    .personality-image img {
+        width: 140px;
+    }
+
+    .text-zon p {
+        padding: 0 0.5rem;
+    }
+
+    .cat-cards {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .Snoezy-card,
+    .Snowy-card {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 8px;
+    }
+
+    .contact-sectie {
+        padding: 40px 18px;
+    }
+}
+
+/* Small phones: tighten spacing and font sizes */
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 1rem 0.6rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.95rem;
+    }
+
+    .card-zon,
+    .personality-card {
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .image-zon img {
+        width: 100px;
+    }
+
+    .personality-image img {
+        width: 120px;
+    }
+
+    .Snoezy-card,
+    .Snowy-card {
+        max-width: 100%;
+        margin: 0.5rem;
+    }
+
+    .cat-cards {
+        gap: 0.8rem;
+        margin: 12px;
+    }
+
+    .contact-sectie {
+        padding: 28px 12px;
+    }
+}
+
+
 

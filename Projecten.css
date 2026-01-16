@@ -250,6 +250,149 @@ p {
         text-transform: lowercase;
         margin: 20px;
 }
+/* css */
+/* Append to `Projecten.css` */
+
+/* Make images and slider fluid */
+.slider img,
+.uitnodiging-image img,
+.Rosenheim img,
+.bachelorproef img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Allow nav to wrap and reduce spacing on narrower layouts */
+.nav-page-header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-right: 12px;
+}
+
+/* Reduce large margins and scale headings for smaller viewports */
+@media (max-width: 1024px) {
+    main {
+        max-width: 860px;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 34px;
+        margin: 2rem 1rem;
+    }
+
+    .slider {
+        max-width: 100%;
+        margin: 1.5rem auto;
+    }
+
+    .Rosenheim,
+    .bachelorproef {
+        height: auto;
+        gap: 16px;
+    }
+
+    .uitnodiging {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 56px;
+    }
+
+    body {
+        padding-top: 56px;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin: 1.6rem 0.5rem;
+    }
+
+    .nav-page-header ul {
+        flex-direction: column;
+        gap: 0.6rem;
+        padding-right: 8px;
+        align-items: center;
+    }
+
+    .Rosenheim,
+    .bachelorproef,
+    .uitnodiging {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Rosenheim img,
+    .bachelorproef img {
+        border-radius: 12px;
+        width: 100%;
+        height: auto;
+    }
+
+    .uitnodiging-image img {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .slider img {
+        max-height: 320px;
+    }
+
+    .slider button {
+        font-size: 22px;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 1rem 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.05rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .fotografieThema\'s li {
+        padding: 8px 12px;
+        border-radius: 20px;
+    }
+
+    .slider img {
+        max-height: 240px;
+        border-radius: 12px;
+    }
+
+    .slider button {
+        font-size: 20px;
+        padding: 6px 8px;
+    }
+
+    .contact-sectie {
+        padding: 36px 12px;
+    }
+
+    .uitnodiging-image img {
+        max-width: 100%;
+    }
+}
+
 
 
 
